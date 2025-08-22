@@ -1,7 +1,6 @@
 package Momentum.heatcaution.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 
 @Schema(description = "회원가입 요청 DTO")
@@ -20,7 +19,6 @@ public record RegisterRequest(
         String phone,
 
         @Schema(description = "생년월일 (yyyy-MM-dd)", example = "2000-01-01")
-        @NotBlank(message = "생년월일은 필수입니다.")
         @Pattern(regexp = "^\\d{4}-\\d{2}-\\d{2}$", message = "생년월일 형식은 yyyy-MM-dd입니다")
         String birth
 ) {}
