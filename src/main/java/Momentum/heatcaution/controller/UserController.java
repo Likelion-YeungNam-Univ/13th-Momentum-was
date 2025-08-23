@@ -19,8 +19,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-//import io.swagger.v3.oas.annotations.parameters.RequestBody;
-import org.springframework.web.bind.annotation.RequestBody; // ✅ 스프링 것만 사용
+import org.springframework.web.bind.annotation.RequestBody;
 
 
 
