@@ -10,3 +10,8 @@ spring:
     url: ${DB_URL}
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
+
+  kakao:
+    rest-key: ${KAKAO_REST_KEY:}
+    client-secret: ${KAKAO_CLIENT_SECRET:}
+    redirect-uri: ${KAKAO_REDIRECT_URI:https://api.ondomi.site/api/invite/kakao/callback}
